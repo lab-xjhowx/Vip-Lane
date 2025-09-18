@@ -76,7 +76,7 @@ export const courses: Course[] = [
   {
     id: 'pacote-fullstack',
     title: 'Pacote Full-Stack',
-    description: 'Acesso a mais de 4.000 vídeo aulas atualizadas, permitindo que você aprenda a criar qualquer website, sistema, aplicativo web ou aplicativo nativo. Desenvolvimento de habilidades adicionais, como design (Apps & Web), infraestrutura & DevOPS, inglês e marketing digital para programadores.',
+    description: 'Acesso a mais de 4.000 vídeo aulas atualizadas, permitindo que você aprenda a criar qualquer website, sistema, aplicativo web ou aplicativo nativo.',
     shortDescription: 'Mais de 4.000 aulas para se tornar um desenvolvedor completo',
     thumbnail: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800',
     price: 1497,
@@ -102,7 +102,6 @@ export const courses: Course[] = [
       { id: '2', title: 'Back-End e APIs', lessons: 45, duration: '35h' },
       { id: '3', title: 'Mobile Development', lessons: 40, duration: '30h' },
       { id: '4', title: 'DevOps e Deploy', lessons: 25, duration: '20h' },
-      { id: '5', title: 'Projetos Práticos', lessons: 100, duration: '75h' },
     ],
     testimonials: [
       {
@@ -117,7 +116,7 @@ export const courses: Course[] = [
   {
     id: 'vba-expert',
     title: 'VBA Expert na Prática | 2025',
-    description: 'Aprenda VBA do básico ao avançado e descubra como automatizar tarefas, criar funções e formulários personalizados no Excel. Com essas habilidades, você pode aumentar sua produtividade e reduzir erros em seu dia-a-dia. Seja um profissional preparado e aprenda VBA agora mesmo!',
+    description: 'Aprenda VBA do básico ao avançado e descubra como automatizar tarefas, criar funções e formulários personalizados no Excel.',
     shortDescription: 'Domine VBA e automatize suas tarefas no Excel',
     thumbnail: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
     price: 297,
@@ -150,14 +149,14 @@ export const courses: Course[] = [
         name: 'Roberto Santos',
         image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300',
         rating: 5,
-        comment: 'Automatizei todos os meus relatórios! Economizo 4 horas por dia de trabalho.'
+        comment: 'Automatizei todos os meus relatórios! Economizo 4 horas por dia.'
       }
     ]
   },
   {
     id: 'power-apps-expert',
     title: 'POWER APPS Expert na Prática | 2025',
-    description: 'Já pensou em criar aplicativos para sua empresa, sem nenhuma necessidade de conhecimento em linguagem de programação? Com o Microsoft Power Apps isso agora é possível! Aproveite para surfar nessa nova oportunidade no mundo da tecnologia, tornando-se Expert na Power Plataform da Microsoft.',
+    description: 'Crie aplicativos para sua empresa sem conhecimento em programação usando Microsoft Power Apps.',
     shortDescription: 'Crie aplicativos profissionais sem programação',
     thumbnail: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800',
     price: 397,
@@ -197,205 +196,162 @@ export const courses: Course[] = [
   // Marketing Digital
   {
     id: 'leadzy',
-    title: 'Python para Data Science',
-    description: 'Domine Python e suas principais bibliotecas para análise de dados, machine learning e inteligência artificial. Torne-se um cientista de dados requisitado no mercado.',
-    shortDescription: 'Python completo para ciência de dados e IA',
-    thumbnail: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800',
-    price: 797,
-    originalPrice: 1497,
-    rating: 4.8,
-    studentCount: 9870,
-    duration: '50 horas',
-    level: 'Intermediário',
-    category: 'Programação',
-    instructor: 'Dra. Camila Santos',
-    instructorImage: 'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/python-data-science',
+    title: 'Leadzy',
+    description: 'O Leadzy eleva o atendimento via WhatsApp oferecendo respostas automáticas com áudios que parecem gravados na hora.',
+    shortDescription: 'Revolucione seu atendimento no WhatsApp',
+    thumbnail: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+    price: 197,
+    originalPrice: 397,
+    rating: 4.9,
+    studentCount: 15420,
+    duration: 'Acesso vitalício',
+    level: 'Iniciante',
+    category: 'Marketing Digital',
+    instructor: 'Equipe Leadzy',
+    instructorImage: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
+    affiliateLink: 'https://go.hotmart.com/V100968766U',
     highlights: [
-      'Python do básico ao avançado',
-      'Pandas, NumPy e Matplotlib',
-      'Machine Learning com Scikit-learn',
-      'Deep Learning com TensorFlow',
-      'Projetos de portfolio',
-      'Certificação internacional'
+      'Respostas automáticas no WhatsApp',
+      'Áudios como se fossem gravados na hora',
+      'Gatilhos automáticos',
+      'Scripts de vendas otimizados',
+      'Melhora experiência do cliente',
+      'Aumenta conversões'
     ],
     modules: [
-      { id: '1', title: 'Python Fundamentals', lessons: 12, duration: '10h' },
-      { id: '2', title: 'Data Analysis', lessons: 15, duration: '12h' },
-      { id: '3', title: 'Machine Learning', lessons: 18, duration: '15h' },
-      { id: '4', title: 'Deep Learning', lessons: 10, duration: '8h' },
-      { id: '5', title: 'Projetos Práticos', lessons: 8, duration: '5h' },
+      { id: '1', title: 'Configuração Inicial', lessons: 5, duration: '2h' },
+      { id: '2', title: 'Respostas Automáticas', lessons: 8, duration: '4h' },
+      { id: '3', title: 'Scripts de Vendas', lessons: 6, duration: '3h' },
+      { id: '4', title: 'Otimização Avançada', lessons: 7, duration: '3h' },
     ],
     testimonials: [
       {
         id: '1',
-        name: 'Rafael Oliveira',
-        image: 'https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=300',
+        name: 'Maria Santos',
+        image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300',
         rating: 5,
-        comment: 'Mudei de carreira e hoje trabalho como Data Scientist em uma multinacional!'
+        comment: 'Triplicou minha taxa de conversão no WhatsApp!'
       }
     ]
   },
   {
-    id: 'mobile-react-native',
-    title: 'Desenvolvimento Mobile com React Native',
-    description: 'Crie aplicativos móveis profissionais para iOS e Android com React Native. Aprenda a desenvolver apps nativos performáticos usando JavaScript.',
-    shortDescription: 'Desenvolva apps móveis profissionais para iOS e Android',
-    thumbnail: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800',
-    price: 697,
-    originalPrice: 1297,
-    rating: 4.7,
-    studentCount: 7650,
-    duration: '45 horas',
+    id: 'super-links',
+    title: 'Super Links',
+    description: 'Plugin essencial para afiliados aumentarem vendas com Facebook Ads e blogs.',
+    shortDescription: 'Plugin essencial para afiliados aumentarem vendas',
+    thumbnail: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    price: 297,
+    originalPrice: 597,
+    rating: 4.8,
+    studentCount: 8930,
+    duration: 'Plugin + Treinamento',
     level: 'Intermediário',
-    category: 'Programação',
-    instructor: 'Marina Silva',
-    instructorImage: 'https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/mobile-react-native',
+    category: 'Marketing Digital',
+    instructor: 'Fabio Vasconcelos',
+    instructorImage: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300',
+    affiliateLink: 'https://go.hotmart.com/T86440927E',
     highlights: [
-      'React Native do zero',
-      'Navegação e roteamento',
-      'APIs e integração backend',
-      'Push notifications',
-      'Publicação nas stores',
-      'Apps reais para portfolio'
+      'Plugin para duplicar/triplicar vendas',
+      'Funciona com Facebook Ads',
+      'Otimizado para blogs',
+      'Ferramenta obrigatória para afiliados',
+      'Estratégias de vendas incluídas',
+      'Suporte especializado'
     ],
     modules: [
-      { id: '1', title: 'React Native Basics', lessons: 10, duration: '8h' },
-      { id: '2', title: 'Navigation & Routing', lessons: 8, duration: '6h' },
-      { id: '3', title: 'APIs & Backend', lessons: 12, duration: '10h' },
-      { id: '4', title: 'Native Features', lessons: 15, duration: '12h' },
-      { id: '5', title: 'Publishing Apps', lessons: 6, duration: '9h' },
+      { id: '1', title: 'Instalação e Configuração', lessons: 4, duration: '2h' },
+      { id: '2', title: 'Estratégias de Vendas', lessons: 8, duration: '6h' },
+      { id: '3', title: 'Facebook Ads Integration', lessons: 6, duration: '4h' },
+      { id: '4', title: 'Otimização Avançada', lessons: 7, duration: '5h' },
     ],
     testimonials: [
       {
         id: '1',
-        name: 'Bruno Martins',
-        image: 'https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=300',
+        name: 'Pedro Lima',
+        image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300',
         rating: 5,
-        comment: 'Desenvolvi 3 apps que já estão nas stores e gerando renda passiva!'
+        comment: 'Quadruplicou minhas vendas como afiliado!'
+      }
+    ]
+  },
+  {
+    id: 'zap-suite',
+    title: 'ZapSuite',
+    description: 'Automatize suas vendas no WhatsApp e dobre seu faturamento em 2025.',
+    shortDescription: 'Automatize vendas no WhatsApp e dobre faturamento',
+    thumbnail: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+    price: 197,
+    originalPrice: 397,
+    rating: 4.9,
+    studentCount: 6540,
+    duration: 'Software + Treinamento',
+    level: 'Iniciante',
+    category: 'Marketing Digital',
+    instructor: 'Equipe ZapSuite',
+    instructorImage: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=300',
+    affiliateLink: 'https://kiwify.app/mFqf933?afid=sGAFoDd9',
+    highlights: [
+      'Automatização completa de vendas',
+      'Interface simples e intuitiva',
+      'Funis de vendas automatizados',
+      'Respostas em texto e áudio',
+      'Ideal para empresários',
+      'Operações otimizadas'
+    ],
+    modules: [
+      { id: '1', title: 'Setup Inicial', lessons: 5, duration: '2h' },
+      { id: '2', title: 'Criação de Funis', lessons: 10, duration: '6h' },
+      { id: '3', title: 'Automação Avançada', lessons: 8, duration: '5h' },
+      { id: '4', title: 'Otimização de Resultados', lessons: 7, duration: '4h' },
+    ],
+    testimonials: [
+      {
+        id: '1',
+        name: 'Juliana Moreira',
+        image: 'https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=300',
+        rating: 5,
+        comment: 'Dobrei meu faturamento em 3 meses!'
       }
     ]
   },
   // Empreendedorismo
   {
-    id: 'e-commerce-milionario',
-    title: 'E-commerce Milionário',
-    description: 'Construa um império digital do zero. Aprenda a criar, escalar e automatizar seu e-commerce para faturar milhões. Estratégias testadas e aprovadas por quem já fez.',
-    shortDescription: 'Do zero ao primeiro milhão com e-commerce',
-    thumbnail: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-    price: 1497,
-    originalPrice: 2997,
+    id: 'mentoria-juncao-milionaria',
+    title: 'MENTORIA JUNÇÃO MILIONARIA',
+    description: 'Curso abrangente para empreendedores aprimorarem vendas online com estratégias eficazes.',
+    shortDescription: 'Estratégias para sucesso financeiro com vendas online',
+    thumbnail: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+    price: 1997,
+    originalPrice: 3997,
     rating: 4.9,
-    studentCount: 5420,
-    duration: '80 horas',
-    level: 'Iniciante',
+    studentCount: 3240,
+    duration: '60 horas',
+    level: 'Avançado',
     category: 'Empreendedorismo',
-    instructor: 'Felipe Augusto',
-    instructorImage: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/e-commerce-milionario',
+    instructor: 'Mentor Milionário',
+    instructorImage: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=300',
+    affiliateLink: 'https://pay.cakto.com.br/7noVZQr?affiliate=dCW3Qec9',
     highlights: [
-      'Escolha de nicho lucrativo',
-      'Criação da loja completa',
-      'Fornecedores e logística',
-      'Marketing para e-commerce',
-      'Automação e escalabilidade',
-      'Mentalidade milionária'
+      'Estratégias de vendas online eficazes',
+      'Marketing digital avançado',
+      'Conversão de leads otimizada',
+      'Mentoria personalizada',
+      'Resultados em menos tempo',
+      'Sucesso financeiro comprovado'
     ],
     modules: [
-      { id: '1', title: 'Fundação do Negócio', lessons: 12, duration: '15h' },
-      { id: '2', title: 'Criação da Loja', lessons: 15, duration: '18h' },
-      { id: '3', title: 'Operacional e Logística', lessons: 18, duration: '20h' },
-      { id: '4', title: 'Marketing e Vendas', lessons: 20, duration: '22h' },
-      { id: '5', title: 'Escalabilidade', lessons: 8, duration: '5h' },
+      { id: '1', title: 'Fundamentos das Vendas Online', lessons: 15, duration: '12h' },
+      { id: '2', title: 'Marketing Digital Avançado', lessons: 20, duration: '18h' },
+      { id: '3', title: 'Conversão e Funis', lessons: 18, duration: '15h' },
+      { id: '4', title: 'Escalabilidade do Negócio', lessons: 22, duration: '15h' },
     ],
     testimonials: [
       {
         id: '1',
-        name: 'Carla Mendes',
+        name: 'Carla Empreendedora',
         image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300',
         rating: 5,
-        comment: 'Em 1 ano saí do zero e cheguei a R$ 1,2 milhão em faturamento!'
-      }
-    ]
-  },
-  {
-    id: 'infoprodutos-authority',
-    title: 'Autoridade em Infoprodutos',
-    description: 'Transforme seu conhecimento em um negócio lucrativo. Aprenda a criar, lançar e vender infoprodutos de alta qualidade que posicionam você como autoridade no seu nicho.',
-    shortDescription: 'Monetize seu conhecimento com infoprodutos de sucesso',
-    thumbnail: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=800',
-    price: 997,
-    originalPrice: 1997,
-    rating: 4.8,
-    studentCount: 8930,
-    duration: '55 horas',
-    level: 'Intermediário',
-    category: 'Empreendedorismo',
-    instructor: 'Rodrigo Almeida',
-    instructorImage: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/infoprodutos-authority',
-    highlights: [
-      'Validação de ideias lucrativas',
-      'Criação de conteúdo premium',
-      'Plataformas e tecnologias',
-      'Estratégias de lançamento',
-      'Construção de autoridade',
-      'Escalabilidade do negócio'
-    ],
-    modules: [
-      { id: '1', title: 'Estratégia e Validação', lessons: 10, duration: '12h' },
-      { id: '2', title: 'Criação do Produto', lessons: 15, duration: '18h' },
-      { id: '3', title: 'Plataforma e Tecnologia', lessons: 8, duration: '10h' },
-      { id: '4', title: 'Lançamento e Marketing', lessons: 12, duration: '15h' },
-    ],
-    testimonials: [
-      {
-        id: '1',
-        name: 'Patricia Rocha',
-        image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300',
-        rating: 5,
-        comment: 'Criei meu primeiro infoproduto e já vendi mais de R$ 500k!'
-      }
-    ]
-  },
-  {
-    id: 'mindset-empreendedor',
-    title: 'Mindset Empreendedor de Elite',
-    description: 'Desenvolva a mentalidade dos empreendedores mais bem-sucedidos do mundo. Supere crenças limitantes, desenvolva disciplina e conquiste a liberdade financeira.',
-    shortDescription: 'A mentalidade que separa vencedores de perdedores',
-    thumbnail: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-    price: 597,
-    originalPrice: 1197,
-    rating: 4.9,
-    studentCount: 11240,
-    duration: '30 horas',
-    level: 'Iniciante',
-    category: 'Empreendedorismo',
-    instructor: 'Marcos Vinicius',
-    instructorImage: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/mindset-empreendedor',
-    highlights: [
-      'Mindset de abundância',
-      'Disciplina e foco extremo',
-      'Gestão de tempo produtiva',
-      'Networking estratégico',
-      'Inteligência emocional',
-      'Visão de longo prazo'
-    ],
-    modules: [
-      { id: '1', title: 'Fundamentos do Mindset', lessons: 8, duration: '8h' },
-      { id: '2', title: 'Disciplina e Hábitos', lessons: 10, duration: '10h' },
-      { id: '3', title: 'Produtividade Extrema', lessons: 6, duration: '6h' },
-      { id: '4', title: 'Relacionamentos e Network', lessons: 6, duration: '6h' },
-    ],
-    testimonials: [
-      {
-        id: '1',
-        name: 'Daniel Santos',
-        image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=300',
-        rating: 5,
-        comment: 'Mudou completamente minha forma de pensar e agir. Resultados incríveis!'
+        comment: 'Faturei R$ 500k em 6 meses após aplicar as estratégias!'
       }
     ]
   },
