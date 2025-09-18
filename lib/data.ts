@@ -2,195 +2,201 @@ import { Course, Category } from './types';
 
 export const categories: Category[] = [
   {
+    id: 'programacao',
+    name: 'Programação',
+    description: 'Domine as linguagens e tecnologias mais demandadas do mercado',
+    icon: '💻',
+    courseCount: 4,
+  },
+  {
     id: 'marketing-digital',
     name: 'Marketing Digital',
-    description: 'Domine as estratégias mais eficazes do marketing online',
+    description: 'Ferramentas e estratégias para maximizar suas vendas online',
     icon: '📈',
     courseCount: 3,
   },
   {
-    id: 'programacao',
-    name: 'Programação',
-    description: 'Aprenda as linguagens e tecnologias mais demandadas',
-    icon: '💻',
-    courseCount: 3,
+    id: 'automacao',
+    name: 'Automação & Produtividade',
+    description: 'Automatize processos e aumente sua produtividade',
+    icon: '⚡',
+    courseCount: 4,
   },
   {
     id: 'empreendedorismo',
     name: 'Empreendedorismo',
     description: 'Transforme suas ideias em negócios de sucesso',
     icon: '🚀',
-    courseCount: 3,
+    courseCount: 2,
   },
 ];
 
 export const courses: Course[] = [
-  // Marketing Digital
+  // Programação
   {
-    id: 'marketing-digital-completo',
-    title: 'Marketing Digital Completo',
-    description: 'Domine todas as estratégias de marketing digital necessárias para alavancar seus negócios. Do básico ao avançado, aprenda SEO, Google Ads, Facebook Ads, Instagram Marketing, Email Marketing e muito mais.',
-    shortDescription: 'Curso completo de marketing digital do zero ao profissional',
-    thumbnail: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+    id: 'jornada-dev-eficiente',
+    title: 'Jornada Dev Eficiente',
+    description: 'A Jornada Dev Eficiente existe para que você treine sua capacidade de escrever código de qualidade em cenários variados. Ela te prepara para a alta performance. E quem se sente mais preparado(a), vai mais longe!',
+    shortDescription: 'Treine sua capacidade de escrever código de qualidade',
+    thumbnail: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800',
     price: 497,
-    originalPrice: 997,
+    originalPrice: 897,
     rating: 4.9,
-    studentCount: 15420,
-    duration: '40 horas',
-    level: 'Iniciante',
-    category: 'Marketing Digital',
-    instructor: 'Carlos Silva',
-    instructorImage: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/marketing-digital-completo',
+    studentCount: 8420,
+    duration: '50 horas',
+    level: 'Intermediário',
+    category: 'Programação',
+    instructor: 'Alberto Luiz',
+    instructorImage: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=300',
+    affiliateLink: 'https://go.hotmart.com/L100511717F',
     highlights: [
-      'SEO e otimização para buscadores',
-      'Google Ads e Facebook Ads',
-      'Instagram e TikTok Marketing',
-      'Email Marketing avançado',
-      'Analytics e métricas',
-      'Certificado de conclusão'
+      'Código de qualidade em cenários variados',
+      'Preparação para alta performance',
+      'Técnicas de desenvolvimento eficiente',
+      'Boas práticas de programação',
+      'Projetos práticos desafiadores',
+      'Mentalidade de desenvolvedor sênior'
     ],
     modules: [
-      { id: '1', title: 'Fundamentos do Marketing Digital', lessons: 8, duration: '6h' },
-      { id: '2', title: 'SEO e Otimização', lessons: 10, duration: '8h' },
-      { id: '3', title: 'Tráfego Pago', lessons: 12, duration: '10h' },
-      { id: '4', title: 'Redes Sociais', lessons: 15, duration: '12h' },
-      { id: '5', title: 'Email Marketing', lessons: 6, duration: '4h' },
+      { id: '1', title: 'Fundamentos da Eficiência', lessons: 12, duration: '10h' },
+      { id: '2', title: 'Código Limpo e Qualidade', lessons: 15, duration: '12h' },
+      { id: '3', title: 'Cenários Práticos', lessons: 18, duration: '15h' },
+      { id: '4', title: 'Performance e Otimização', lessons: 20, duration: '13h' },
     ],
     testimonials: [
       {
         id: '1',
-        name: 'Maria Santos',
-        image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300',
+        name: 'Carlos Mendes',
+        image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=300',
         rating: 5,
-        comment: 'Curso incrível! Aprendi muito e já estou aplicando nas minhas campanhas.'
+        comment: 'Mudou completamente minha forma de programar. Agora escrevo código muito mais limpo!'
       }
     ]
   },
   {
-    id: 'copywriting-conversao',
-    title: 'Copywriting de Alta Conversão',
-    description: 'Aprenda a arte da escrita persuasiva que vende. Domine as técnicas de copywriting mais eficazes para criar textos que convertem visitantes em clientes e maximizam suas vendas.',
-    shortDescription: 'Escreva textos que vendem e convertem como um profissional',
+    id: 'pacote-fullstack',
+    title: 'Pacote Full-Stack',
+    description: 'Acesso a mais de 4.000 vídeo aulas atualizadas, permitindo que você aprenda a criar qualquer website, sistema, aplicativo web ou aplicativo nativo. Desenvolvimento de habilidades adicionais, como design (Apps & Web), infraestrutura & DevOPS, inglês e marketing digital para programadores.',
+    shortDescription: 'Mais de 4.000 aulas para se tornar um desenvolvedor completo',
+    thumbnail: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800',
+    price: 1497,
+    originalPrice: 2997,
+    rating: 4.9,
+    studentCount: 25420,
+    duration: '200+ horas',
+    level: 'Iniciante',
+    category: 'Programação',
+    instructor: 'Equipe Full-Stack Master',
+    instructorImage: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
+    affiliateLink: 'https://go.hotmart.com/W86492316L',
+    highlights: [
+      'Mais de 4.000 vídeo aulas atualizadas',
+      'Front-End, Back-End e Mobile',
+      'ReactJS, Angular, Vue, NodeJS',
+      'Design para Apps & Web',
+      'Infraestrutura & DevOPS',
+      'Acesso vitalício com suporte'
+    ],
+    modules: [
+      { id: '1', title: 'Front-End Completo', lessons: 50, duration: '40h' },
+      { id: '2', title: 'Back-End e APIs', lessons: 45, duration: '35h' },
+      { id: '3', title: 'Mobile Development', lessons: 40, duration: '30h' },
+      { id: '4', title: 'DevOps e Deploy', lessons: 25, duration: '20h' },
+      { id: '5', title: 'Projetos Práticos', lessons: 100, duration: '75h' },
+    ],
+    testimonials: [
+      {
+        id: '1',
+        name: 'Ana Silva',
+        image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300',
+        rating: 5,
+        comment: 'Conteúdo incrível! Consegui meu primeiro emprego como Full-Stack em 8 meses!'
+      }
+    ]
+  },
+  {
+    id: 'vba-expert',
+    title: 'VBA Expert na Prática | 2025',
+    description: 'Aprenda VBA do básico ao avançado e descubra como automatizar tarefas, criar funções e formulários personalizados no Excel. Com essas habilidades, você pode aumentar sua produtividade e reduzir erros em seu dia-a-dia. Seja um profissional preparado e aprenda VBA agora mesmo!',
+    shortDescription: 'Domine VBA e automatize suas tarefas no Excel',
     thumbnail: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
+    price: 297,
+    originalPrice: 597,
+    rating: 4.8,
+    studentCount: 12540,
+    duration: '35 horas',
+    level: 'Iniciante',
+    category: 'Programação',
+    instructor: 'Especialista VBA',
+    instructorImage: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=300',
+    affiliateLink: 'https://go.hotmart.com/T100596966C',
+    highlights: [
+      'VBA do básico ao avançado',
+      'Automatização de tarefas',
+      'Funções e formulários personalizados',
+      'Macros e códigos do zero',
+      'Operadores lógicos avançados',
+      'Projetos práticos no Excel'
+    ],
+    modules: [
+      { id: '1', title: 'Fundamentos do VBA', lessons: 10, duration: '8h' },
+      { id: '2', title: 'Macros e Automação', lessons: 12, duration: '10h' },
+      { id: '3', title: 'Formulários Avançados', lessons: 8, duration: '7h' },
+      { id: '4', title: 'Projetos Práticos', lessons: 15, duration: '10h' },
+    ],
+    testimonials: [
+      {
+        id: '1',
+        name: 'Roberto Santos',
+        image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300',
+        rating: 5,
+        comment: 'Automatizei todos os meus relatórios! Economizo 4 horas por dia de trabalho.'
+      }
+    ]
+  },
+  {
+    id: 'power-apps-expert',
+    title: 'POWER APPS Expert na Prática | 2025',
+    description: 'Já pensou em criar aplicativos para sua empresa, sem nenhuma necessidade de conhecimento em linguagem de programação? Com o Microsoft Power Apps isso agora é possível! Aproveite para surfar nessa nova oportunidade no mundo da tecnologia, tornando-se Expert na Power Plataform da Microsoft.',
+    shortDescription: 'Crie aplicativos profissionais sem programação',
+    thumbnail: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800',
     price: 397,
     originalPrice: 797,
     rating: 4.8,
-    studentCount: 8930,
-    duration: '25 horas',
-    level: 'Intermediário',
-    category: 'Marketing Digital',
-    instructor: 'Ana Rodrigues',
-    instructorImage: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/copywriting-conversao',
-    highlights: [
-      'Fórmulas de copywriting que funcionam',
-      'Headlines que chamam atenção',
-      'CTAs irresistíveis',
-      'Copy para diferentes canais',
-      'Testes A/B para copy',
-      'Templates prontos para usar'
-    ],
-    modules: [
-      { id: '1', title: 'Fundamentos do Copywriting', lessons: 6, duration: '5h' },
-      { id: '2', title: 'Headlines e Títulos', lessons: 8, duration: '6h' },
-      { id: '3', title: 'Body Copy e Storytelling', lessons: 10, duration: '8h' },
-      { id: '4', title: 'CTAs e Conversão', lessons: 7, duration: '6h' },
-    ],
-    testimonials: [
-      {
-        id: '1',
-        name: 'Pedro Lima',
-        image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300',
-        rating: 5,
-        comment: 'Minha taxa de conversão triplicou após aplicar as técnicas do curso!'
-      }
-    ]
-  },
-  {
-    id: 'funil-vendas-avancado',
-    title: 'Funil de Vendas Avançado',
-    description: 'Construa funis de vendas altamente eficazes que automatizam suas vendas 24/7. Aprenda a criar jornadas de compra otimizadas que nutrem leads e maximizam o faturamento.',
-    shortDescription: 'Construa funis que vendem no automático',
-    thumbnail: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-    price: 697,
-    originalPrice: 1297,
-    rating: 4.9,
-    studentCount: 6540,
-    duration: '35 horas',
-    level: 'Avançado',
-    category: 'Marketing Digital',
-    instructor: 'Roberto Costa',
-    instructorImage: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/funil-vendas-avancado',
-    highlights: [
-      'Arquitetura de funis de alta conversão',
-      'Páginas de captura otimizadas',
-      'Sequências de email automáticas',
-      'Upsells e downsells estratégicos',
-      'Automação completa',
-      'Casos reais de sucesso'
-    ],
-    modules: [
-      { id: '1', title: 'Estratégia de Funis', lessons: 8, duration: '7h' },
-      { id: '2', title: 'Landing Pages', lessons: 10, duration: '9h' },
-      { id: '3', title: 'Email Marketing Automation', lessons: 12, duration: '10h' },
-      { id: '4', title: 'Upsells e Cross-sells', lessons: 9, duration: '9h' },
-    ],
-    testimonials: [
-      {
-        id: '1',
-        name: 'Juliana Moreira',
-        image: 'https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=300',
-        rating: 5,
-        comment: 'Construí um funil que me trouxe mais de R$ 100k em vendas automáticas!'
-      }
-    ]
-  },
-  // Programação
-  {
-    id: 'fullstack-javascript',
-    title: 'Full Stack JavaScript Moderno',
-    description: 'Torne-se um desenvolvedor full stack completo dominando JavaScript, React, Node.js, Express, MongoDB e todas as tecnologias modernas do desenvolvimento web.',
-    shortDescription: 'Do zero ao desenvolvedor full stack em JavaScript',
-    thumbnail: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800',
-    price: 897,
-    originalPrice: 1597,
-    rating: 4.9,
-    studentCount: 12350,
-    duration: '60 horas',
+    studentCount: 9540,
+    duration: '40 horas',
     level: 'Iniciante',
     category: 'Programação',
-    instructor: 'Lucas Ferreira',
-    instructorImage: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=300',
-    affiliateLink: 'https://exemplo.com/affiliate/fullstack-javascript',
+    instructor: 'Equipe Viscari',
+    instructorImage: 'https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=300',
+    affiliateLink: 'https://go.hotmart.com/Q100596983X',
     highlights: [
-      'JavaScript ES6+ completo',
-      'React com Hooks e Context',
-      'Node.js e Express',
-      'MongoDB e Mongoose',
-      'Deploy na AWS',
-      'Projetos reais do mercado'
+      'Criação de apps sem programação',
+      'Microsoft Power Platform',
+      'Design responsivo para mobile',
+      'Integração com dados corporativos',
+      'Automação de processos',
+      'Do amador ao avançado'
     ],
     modules: [
-      { id: '1', title: 'JavaScript Fundamentals', lessons: 15, duration: '12h' },
-      { id: '2', title: 'React Development', lessons: 18, duration: '15h' },
-      { id: '3', title: 'Backend com Node.js', lessons: 20, duration: '16h' },
-      { id: '4', title: 'Banco de Dados', lessons: 12, duration: '10h' },
-      { id: '5', title: 'Deploy e DevOps', lessons: 8, duration: '7h' },
+      { id: '1', title: 'Introdução ao Power Apps', lessons: 8, duration: '6h' },
+      { id: '2', title: 'Criação de Apps Básicos', lessons: 12, duration: '10h' },
+      { id: '3', title: 'Recursos Avançados', lessons: 15, duration: '12h' },
+      { id: '4', title: 'Integração e Deploy', lessons: 10, duration: '12h' },
     ],
     testimonials: [
       {
         id: '1',
-        name: 'Thiago Nascimento',
-        image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=300',
+        name: 'Fernanda Costa',
+        image: 'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=300',
         rating: 5,
-        comment: 'Consegui meu primeiro emprego como dev depois de 6 meses estudando!'
+        comment: 'Criei 5 aplicativos para minha empresa sem saber programar!'
       }
     ]
   },
+  // Marketing Digital
   {
-    id: 'python-data-science',
+    id: 'leadzy',
     title: 'Python para Data Science',
     description: 'Domine Python e suas principais bibliotecas para análise de dados, machine learning e inteligência artificial. Torne-se um cientista de dados requisitado no mercado.',
     shortDescription: 'Python completo para ciência de dados e IA',
