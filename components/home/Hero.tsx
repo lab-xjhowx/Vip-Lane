@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Sparkles, TrendingUp, Award } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 
 export function Hero() {
   const scrollToCategories = () => {

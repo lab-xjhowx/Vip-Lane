@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Star, Users, Clock, Badge, Play, CheckCircle, ExternalLink } from 'lucide-react';
 import { Course } from '@/lib/types';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 
 interface CourseModalProps {
   course: Course | null;

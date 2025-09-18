@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Star, Users, Clock, Badge } from 'lucide-react';
 import { Course } from '@/lib/types';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 
 interface CourseCardProps {
   course: Course;
