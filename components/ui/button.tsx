@@ -1,37 +1,47 @@
 import { forwardRef } from 'react';
 import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
+import { cva, type VariantProps } from 'class-variance-authority';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'default' | 'vip' | 'outline' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
+const buttonVariants = cva(
+  'inline-flex items-center justify-center rounded-md font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+  {
+    variants: {
+      variant: {
+        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+        vip: 'vip-button text-black hover:shadow-2xl',
+        outline: 'border border-border bg-transparent hover:bg-accent hover:text-accent-foreground',
+        ghost: 'hover:bg-accent hover:text-accent-foreground',
+        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
+        secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+        link: 'text-primary underline-offset-4 hover:underline',
+      },
+      size: {
+        default: 'h-10 px-4 py-2',
+        sm: 'h-9 px-3 text-sm',
+        lg: 'h-11 px-8 text-lg',
+        icon: 'h-10 w-10',
+      },
+    },
+    defaultVariants: {
+      variant: 'default',
+      size: 'default',
+    },
+  }
+);
+
+interface ButtonProps 
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {
   loading?: boolean;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = 'default', size = 'md', loading, children, ...props }, ref) => {
-    const baseClasses = 'inline-flex items-center justify-center rounded-md font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50';
-    
-    const variants = {
-      default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-      vip: 'vip-button text-black hover:shadow-2xl',
-      outline: 'border border-border bg-transparent hover:bg-accent hover:text-accent-foreground',
-      ghost: 'hover:bg-accent hover:text-accent-foreground',
-    };
-
-    const sizes = {
-      sm: 'h-9 px-3 text-sm',
-      md: 'h-10 px-4 py-2',
-      lg: 'h-11 px-8 text-lg',
-    };
-
+  ({ className, variant, size, loading, children, ...props }, ref) => {
     return (
-      <motion.button
+      <button
         ref={ref}
-        className={cn(baseClasses, variants[variant], sizes[size], className)}
+        className={cn(buttonVariants({ variant, size, className }))}
         disabled={loading}
-        whileHover={{ scale: variant === 'vip' ? 1.05 : 1.02 }}
-        whileTap={{ scale: 0.98 }}
         {...props}
       >
         {loading && (
@@ -57,11 +67,12 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           </svg>
         )}
         {children}
-      </motion.button>
+      </button>
     );
   }
 );
 
 Button.displayName = 'Button';
 
-export { Button };
+export { Button, buttonVariants };
+export type { ButtonProps };
