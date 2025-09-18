@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* VIP Casino Color Palette */
+  --vip-gold: #FFD700;
+  --vip-gold-dark: #FFA500;
+  --vip-red: #DC143C;
+  --vip-red-dark: #B22222;
+  --vip-black: #0A0A0A;
+  --vip-black-light: #1A1A1A;
+  --vip-gray: #2A2A2A;
+  --vip-gray-light: #3A3A3A;
+  
+  /* Theme Variables */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 45 100% 50%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 45 100% 50%;
+  --radius: 0.75rem;
+  
+  /* VIP Gradients */
+  --vip-gradient-gold: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  --vip-gradient-red: linear-gradient(135deg, #DC143C 0%, #B22222 100%);
+  --vip-gradient-premium: linear-gradient(135deg, #FFD700 0%, #DC143C 50%, #B22222 100%);
+}
+
+.dark {
+  --background: 0 0% 4%;
+  --foreground: 210 40% 98%;
+  --card: 0 0% 6%;
+  --card-foreground: 210 40% 98%;
+  --popover: 0 0% 6%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 45 100% 50%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 45 100% 50%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .vip-gradient {
+    background: var(--vip-gradient-premium);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .vip-card {
+    @apply relative overflow-hidden rounded-xl bg-card/50 backdrop-blur-sm border border-border/50;
+    background-image: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(220, 20, 60, 0.1) 100%);
+    transition: all 0.3s ease;
+  }
+
+  .vip-card:hover {
+    @apply border-primary/50 shadow-2xl shadow-primary/20;
+    transform: translateY(-4px) scale(1.02);
+  }
+
+  .vip-button {
+    @apply relative overflow-hidden rounded-lg px-8 py-3 font-semibold text-black transition-all duration-300;
+    background: var(--vip-gradient-gold);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  }
+
+  .vip-button:hover {
+    @apply shadow-2xl;
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+    transform: translateY(-2px);
+  }
+
+  .vip-button:active {
+    transform: translateY(0px);
+  }
+
+  .netflix-scroll {
+    @apply flex gap-4 overflow-x-auto pb-4;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .netflix-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .dark .glass-effect {
+    @apply bg-black/20 backdrop-blur-md border border-white/10;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
